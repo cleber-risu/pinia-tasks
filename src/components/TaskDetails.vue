@@ -1,6 +1,9 @@
 <script setup>
+import { useTaskStore } from '../stores/TaskStore';
 
 const { task } = defineProps(['task'])
+
+const taskStore = useTaskStore()
 
 </script>
 
@@ -8,8 +11,18 @@ const { task } = defineProps(['task'])
   <div class="task">
     <h3>{{ task.title }}</h3>
     <div class="icons">
-      <i class="material-icons">delete</i>
-      <i class="material-icons">favorite</i>
+      <i 
+        @click="taskStore.deleteTask(task.id)"
+        class="material-icons"
+      >
+        delete
+      </i>
+      <i
+        @click="taskStore.toggleFav(task.id)"
+        :class="['material-icons', { active: task.isFav }]"
+      >
+        favorite
+      </i>
     </div>
   </div>
 </template>
