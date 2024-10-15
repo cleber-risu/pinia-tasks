@@ -7,6 +7,9 @@ import TaskForm from './components/TaskForm.vue';
 
 const taskStore = useTaskStore()
 
+// fetch tasks
+taskStore.getTasks()
+
 const filter = ref('all')
 </script>
 
@@ -17,6 +20,11 @@ const filter = ref('all')
       <img src="./assets/pinia-logo.svg" alt="Pinia logo" />
       <h1>Pinia tasks</h1>
     </header>
+
+    <!-- loading -->
+    <div class="loading" v-if="taskStore.isLoading">
+      Loading Tasks...
+    </div>
 
     <!-- new task form -->
      <div class="new-task-form">
