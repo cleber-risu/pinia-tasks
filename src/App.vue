@@ -55,7 +55,9 @@ const filter = ref('all')
       </div>
     </div>
 
-    <button @click="taskStore.$reset">Reset</button>
+    <!--
+      <button @click="taskStore.$reset">Reset</button>
+    -->
   </main>
 </template>
 
