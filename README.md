@@ -1,5 +1,23 @@
-# Vue 3 + Vite
+<h1 align="center">Pinia Tasks</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<p align="center">
+  <img alt="shopping bag" src=".github/pinia-tasks.png" width="100%">
+</p>
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+- VueJS
+- Pinia
+
+## 💻 Projeto
+
+Um app de uma lista de tarefas para desmonstrar como usar o gerenciador de estados Pinia.
+
+---
+
+Feito com ♥ by Cleber-Risu
